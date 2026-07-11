@@ -12,14 +12,14 @@
     background:#f4f6fc;
 
     border-top-right-radius:20px;
-    border-bottom-right-radius:20px;
+    border-bottom-right-radius:0px;
 
     display:flex;
     flex-direction:column;
     justify-content:space-between;
     align-items:center;
 
-    padding:25px;
+    padding:15px;
 
 }
 
@@ -179,29 +179,5 @@
     background:#004540;
 
     transform:scale(1.03);
-
-}
-
-
-/* ==========================================
-                RESPONSIVE
-========================================== */
-
-@media (max-width:768px){
-
-    .sidebar{
-
-        max-width:100%;
-        min-height:auto;
-
-        border-radius:0;
-
-    }
-
-    .sidebar-menu{
-
-        margin:25px 0;
-
-    }
 
 }
