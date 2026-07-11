@@ -1,0 +1,422 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+    body{
+        overflow-x:hidden;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+.bordeContenedorAprendiz{
+    width:100vw;
+    min-height:100vh;
+    display:flex;
+    background:linear-gradient(to top right,#004540,#01d885);
+}
+
+/* ===========================
+        PANEL IZQUIERDO
+=========================== */
+
+.bordeContenedorIzquierdoSuperiorAprendiz{
+    width:25%;
+    min-width:270px;
+    background:#f4f6fc;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:20px;
+}
+
+.posicionImagenAprendiz{
+    width:70px;
+    margin-bottom:30px;
+}
+
+.imagenDeNotificacion{
+margin-left: 90%;
+width: 33px;
+}
+
+.bordeContenedorIzquierdoInferiorAprendiz{
+    width:100%;
+    flex:1;
+    background:rgb(168,195,197);
+    margin-top:20px;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 15px;
+}
+
+.menuAltoParteIzquierda{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:25px;
+}
+
+.menuBajoParteIzquierda{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+/* ===========================
+          BOTONES
+=========================== */
+
+.botonMisTurnos,
+.botonMiPerfil,
+.botonInfoFicha
+{
+
+    width:250px;
+    height:50px;
+    border-radius:15px;
+    background:white;
+    border:3px solid black;
+    box-shadow:1px 3px 3px black;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.botonEcontrasteAlgunProblema{
+   width:250px;
+    height:50px;
+    border-radius:15px;
+    background:#0d877a;
+    border:3px solid black;
+    box-shadow:1px 3px 3px black;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.2s;
+    color: white;
+    margin-top: 6px;
+}
+.botonMisTurnos:hover,
+.botonMiPerfil:hover,
+.botonInfoFicha:hover,
+.botonEcontrasteAlgunProblema:hover{
+    transform:scale(1.03);
+}
+
+.botonDeCancelar{
+
+    width:200px;
+    height:50px;
+    background:#0d877a;
+    color:white;
+    border-radius:15px;
+    box-shadow:1px 3px 3px black;
+    font-weight:bold;
+    font-size:15px;
+    cursor:pointer;
+}
+
+.botonDeGuardar{
+
+    width:200px;
+    height:50px;
+    background:#01d885;
+    color:white;
+    border-radius:15px;
+    box-shadow:1px 3px 3px black;
+    font-weight:bold;
+    font-size:15px;
+    cursor:pointer;
+}
+
+/* ===========================
+        PANEL DERECHO
+=========================== */
+
+.bordeContenedorDerechoSuperiorAprendiz{
+    width:75%;
+    display:flex;
+    flex-direction:column;
+    padding:20px 30px;
+}
+
+.boxTituloDerecha{
+    width:100%;
+    display:flex;   
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.tituloDeInterfazSenaAseoIzquierda{
+    color:white;
+    font-size:65px;
+    font-family:"Times New Roman", Times, serif;
+}
+
+.tituloDeInterfazSenaAseoDerecha{
+    color:#0c5149;
+    font-size:65px;
+    font-family:"Times New Roman", Times, serif;
+}
+
+.imagenDelLogo{
+    width:70px;
+}
+
+.boxNumeroFichaDerecha{
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    margin-bottom:10px;
+}
+
+.numeroFichaInterfazDerecha{
+    width:180px;
+    height:60px;
+    border-radius:20px;
+    text-align:center;
+    background:linear-gradient(to bottom right,#01d885,#168376);
+    font-weight:bold;
+    box-shadow:1px 3px 3px black;
+}
+
+.boxInfoInterfaz{
+    width:100%;
+    display:flex;
+    justify-content:flex-start;
+    margin-bottom:20px;
+}
+
+.informacionUbicacionUbicacionPagina{
+    width:220px;
+    height:45px;
+    border-radius:20px;
+    font-size:20px;
+    font-weight:bold;
+    box-shadow:1px 3px 3px black;
+    margin-left:20px;   
+}
+
+/*====================================
+      PANEL BLANCO PRINCIPAL
+=====================================*/
+
+.bordeContenedorDerechoInferiorAprendiz{
+    width:95%;
+    flex:1;
+    background:#f4f6fc;
+    border-radius:35px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:30px;
+    gap:18px;
+    margin:auto;
+}
+
+
+/*====================================
+      FILAS DEL FORMULARIO
+=====================================*/
+
+.boxPanelDerecho1{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.boxPanelDerecho2Y3{
+    width:105%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:35px;
+}
+
+.boxPanelDerecho4Y5{
+    width:105%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:35px;
+}
+
+.boxPanelDerecho6{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+/*====================================
+      INPUTS
+=====================================*/
+
+.casillaDeInformacion1{
+    width:85%;
+    max-width:720px;
+    height:50px;
+    border-radius:15px;
+    box-shadow:1px 3px 3px black;
+    text-align:center;
+    font-size:18px;
+}
+
+.casillaDeInformacion6{
+    width:85%;
+    max-width:720px;
+    height:50px;
+    border-radius:15px;
+    box-shadow:1px 3px 3px black;
+    text-align:center;
+    font-size:18px;
+}
+
+.casillaDeInformacion2,
+.casillaDeInformacion3,
+.casillaDeInformacion4,
+.casillaDeInformacion5{
+    width:42%;
+    max-width:290px;
+    height:50px;
+    border-radius:15px;
+    box-shadow:1px 3px 3px black;
+    text-align:center;
+    font-size:17px;
+}
+
+
+/*====================================
+      BOTONES INFERIORES
+=====================================*/
+
+.boxCancelarGuardar{
+    width:85%;
+    max-width:720px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:35px;
+}
+
+
+/*====================================
+      RESPONSIVE
+=====================================*/
+
+@media (max-width:1100px){
+
+    .tituloDeInterfazSenaAseoIzquierda,
+    .tituloDeInterfazSenaAseoDerecha{
+        font-size:50px;
+    }
+
+    .casillaDeInformacion1,
+    .casillaDeInformacion6{
+        width:95%;
+    }
+
+}
+
+@media (max-width:900px){
+
+ 
+    .bordeContenedorIzquierdoSuperiorAprendiz{
+        width:100%;
+        border-radius:0;
+    }
+
+    .bordeContenedorDerechoSuperiorAprendiz{
+        width:100%;
+        padding:20px;
+    }
+
+    .boxTituloDerecha{
+
+   
+        gap:10px;
+    }
+
+    .boxNumeroFichaDerecha{
+
+        justify-content:center;
+    }
+
+    .boxInfoInterfaz{
+
+        justify-content:center;
+    }
+
+    .boxPanelDerecho2Y3,
+    .boxPanelDerecho4Y5{
+
+    
+
+        gap:18px;
+    }
+
+    .casillaDeInformacion2,
+    .casillaDeInformacion3,
+    .casillaDeInformacion4,
+    .casillaDeInformacion5{
+        width:95%;
+        max-width:720px;
+    }
+
+    .boxCancelarGuardar{
+
+        gap:20px;
+    }
+
+}
+
+@media (max-width:600px){
+
+      .bordeContenedorAprendiz{
+        flex-direction:column;
+    }
+        .boxInfoInterfaz{
+
+        justify-content:left;
+    }
+
+     .boxNumeroFichaDerecha{
+
+        justify-content:right;
+    }
+
+    .tituloDeInterfazSenaAseoIzquierda,
+    .tituloDeInterfazSenaAseoDerecha{
+        font-size:38px;
+    }
+
+    .imagenDelLogo{
+        width:50px;
+    }
+
+    .numeroFichaInterfazDerecha{
+        width:150px;
+        height:50px;
+    }
+    
+    .menuAltoParteIzquierda{
+         gap:8px;
+         margin-bottom: 10px;
+        
+    }
+
+    .menuBajoParteIzquierda{
+    justify-content: center end;
+    
+    }
+}

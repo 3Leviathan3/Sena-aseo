@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio aprendiz</title>
+    <link rel="stylesheet" href="CSS3/Login.css">
+
+</head>
+<body>
+    <!-- este div va a contener los divs internos-->
+    <div class="bordeContenedorAprendiz">
+
+    <!-- aca abriria el ladod derecho-->
+         
+    <header class="bordeContenedorIzquierdoSuperiorAprendiz">
+        
+        <img src="Imagenes/notificacion.png"  class="imagenDeNotificacion" ">
+        <br>
+        <img src="Imagenes/Icono de usuaruio interfaz aprendiz.png"  class="posicionImagenAprendiz">
+        <!-- aca iria el nombre del usuario-->
+        <h2>Bienvenido, Daniel</h2>
+        <!--aca iria el id de la persona, traerlo desde la base de datos-->
+        <p>ID:12313212</p>
+            <!--aca abre la parte inferior del lado derecho-->
+            <aside class="bordeContenedorIzquierdoInferiorAprendiz">
+                <div class="menuAltoParteIzquierda">
+                <input type="button" value="Mis turnos" class="botonMisTurnos">
+                
+                <input type="button" value="Mi perfil" class="botonMiPerfil">
+                
+                <input type="button" value="Info.ficha" class="botonInfoFicha">
+                </div>
+                <div class="menuBajoParteIzquierda">
+                <input type="button" value="¿Encontraste algun error?" class="botonEcontrasteAlgunProblema">
+                </div>
+                
+
+            </aside>
+        </header>
+
+    <!-- Aca inicia la parte derecha -->
+
+        <!-- aca inicia el primer div de la parte derecha-->
+        <header class="bordeContenedorDerechoSuperiorAprendiz">       
+            <div class="boxTituloDerecha">
+            <label class="tituloDeInterfazSenaAseoIzquierda"><strong>SENA</strong> </label> <img src="Imagenes/Logo del sena para interfaz de aprendiz.png" class="imagenDelLogo"> 
+            <label class="tituloDeInterfazSenaAseoDerecha"><strong>ASEO</strong></label>
+            </div>
+
+            <div class="boxNumeroFichaDerecha">
+            <!-- este es el numero de ficha que se pone en la parte superior derecha --> 
+            <input type="text" id="numeroFichaInterfazAprendiz" class="numeroFichaInterfazDerecha" readonly>
+            </div>
+            
+            <div class="boxInfoInterfaz">
+            <input type="button" value="Mi Perfil" class="informacionUbicacionUbicacionPagina">
+            </div>
+
+            <main class="bordeContenedorDerechoInferiorAprendiz">
+            <!--aca se abre el segundo div de la parte derecha-->
+                <div class="boxPanelDerecho1">
+                <input type="text" id="nombreAprendiz" readonly class="casillaDeInformacion1">
+                </div>
+
+                <div class="boxPanelDerecho2Y3">
+                <input type="text" id="numeroDocumento" readonly class="casillaDeInformacion2">
+                <input type="text" id="numeroTelefono" class="casillaDeInformacion3">
+                </div>
+
+                <div class="boxPanelDerecho4Y5">
+                <input type="text" id="numeroFicha" readonly class="casillaDeInformacion4">
+                <input type="text" id="contraseña" class="casillaDeInformacion5" >
+                </div>
+
+
+                <div class="boxPanelDerecho6">
+                <input type="text" id="correoElectronico" readonly class="casillaDeInformacion6">
+                </div>
+                
+                <div class="boxCancelarGuardar">
+                <input type="button" value="Guardar" class="botonDeGuardar" >
+                <input type="button" value="Cancelar" class="botonDeCancelar" >
+                </div>
+            </main>
+        </header>
+    </div>
+</body>
+</html>
