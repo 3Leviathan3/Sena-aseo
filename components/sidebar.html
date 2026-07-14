@@ -1,7 +1,19 @@
 <aside class="sidebar">
 
     <div class="sidebar-profile">
+        
+        <div class="sidebar-header">
+            
+            <button 
+                id="sidebar-toggle"
+                class="sidebar-toggle">
 
+                <i class="fa-solid fa-bars"></i>
+        
+            </button>
+
+        </div>
+        
         <img
             src="/assets/img/Icono de usuaruio interfaz aprendiz.png"
             alt="Foto de perfil del usuario"
@@ -24,15 +36,22 @@
        class="menu-button"
        data-page="mis-turnos.html">
 
-        Mis turnos
+        <i class="fa-solid fa-calendar-days menu-icon"></i> <!-- Icono de calendario -->
 
+
+        <span class="menu-text">
+            Mis turnos
+        </span>
     </a>
 
     <a href="/pages/instructor/mi-perfil.html"
        class="menu-button"
        data-page="mi-perfil.html">
 
-        Mi perfil
+       <i class="fa-solid fa-user menu-icon"></i> <!-- Icono de usuario -->
+        <span class="menu-text">
+            Mi perfil
+        </span>
 
     </a>
 
@@ -40,7 +59,10 @@
        class="menu-button"
        data-page="informacion-ficha.html">
 
-        Info. ficha
+       <i class="fa-solid fa-circle-info menu-icon"></i> <!-- Icono de información -->
+        <span class="menu-text">
+            Info. ficha
+        </span>
 
     </a>
 
@@ -48,7 +70,10 @@
 
     <button class="report-error-button">
 
-        ¿Encontraste algun error?
+        <i class="fa-solid fa-triangle-exclamation"></i> <!-- Icono de advertencia -->
+        <span class="menu-text">
+            ¿Encontraste algun error?
+        </span>
 
     </button>
 

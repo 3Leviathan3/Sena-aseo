@@ -1,34 +1,41 @@
-/*Script para adherir la plantilla del sidebar*/
+/* ==========================================
+            CARGAR SIDEBAR
+========================================== */
 
 document.addEventListener("DOMContentLoaded", cargarSidebar);
 
 async function cargarSidebar() {
 
-    const contenedor = document.getElementById("sidebar-container");
+    const cargado = await cargarComponente(
+        "sidebar-container",
+        "../components/sidebar.html"
+    );
 
-    if (!contenedor) return;
+    if (!cargado) return;
 
-    try {
+    const sidebar = document.querySelector(".sidebar");
 
-        const respuesta = await fetch("../components/sidebar.html");
+    const estado = localStorage.getItem("sidebar");
+    
+    console.log("Estado guardado:", estado);
 
-        const sidebar = await respuesta.text();
+    if (estado === "true") {
 
-        contenedor.innerHTML = sidebar;
-
-        cargarDatosUsuario();
-
-        activarMenu();
-
-    } catch (error) {
-
-        console.error("Error al cargar el sidebar:", error);
+        sidebar.classList.add("collapsed");
 
     }
 
+    cargarDatosUsuario();
+
+    activarMenu();
+
 }
 
-/* Script para cargar los datos del usuario */
+
+
+/* ==========================================
+        DATOS DEL USUARIO
+========================================== */
 
 function cargarDatosUsuario() {
 
@@ -50,7 +57,10 @@ function cargarDatosUsuario() {
 
 }
 
-/*Script para activar el boton seleccionado*/
+
+/* ==========================================
+        BOTON ACTIVO DEL MENU
+========================================== */
 
 function activarMenu() {
 
@@ -67,6 +77,31 @@ function activarMenu() {
         }
 
     });
+
+}
+
+
+/* ==========================================
+        BOTON HAMBURGUESA
+========================================== */
+
+document.addEventListener("click", toggleSidebar);
+
+function toggleSidebar(event) {
+
+    const boton = event.target.closest("#sidebar-toggle");
+
+    if (!boton) return;
+
+    const sidebar = document.querySelector(".sidebar");
+
+    if (!sidebar) return;
+
+    sidebar.classList.toggle("collapsed");
+
+    const estaColapsado = sidebar.classList.contains("collapsed");
+
+    localStorage.setItem("sidebar", estaColapsado);
 
 }
 

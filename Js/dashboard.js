@@ -1,25 +1,14 @@
-document.addEventListener("DOMContentLoaded", async ()=>{
+/* ==========================================
+            DASHBOARD
+========================================== */
+/* Aqui vamos a meter la logica del dashboard, para que no se mezcle con la logica del sidebar 
+y header 
+document.addEventListener("DOMContentLoaded", iniciarDashboard);
 
-    await cargarComponente(
+function inicializarDashboard() {
 
-        "sidebar-container",
+    console.log("Dashboard cargado.");
 
-        "../components/sidebar.html"
+    // Aquí irá la lógica exclusiva del Dashboard
 
-    );
-
-    await cargarComponente(
-
-        "header-container",
-
-        "../components/header.html"
-
-    );
-    
-    /*Aqui continuan los await para cargar los demas componentes */
-
-    cargarDatosUsuario();
-
-    activarMenu();
-
-});
+} */
