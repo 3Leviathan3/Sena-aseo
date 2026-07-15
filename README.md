@@ -1,26 +1,26 @@
-# 🧹 SENA ASEO
+#  SENA ASEO
 
 Sistema web desarrollado para gestionar y controlar el aseo de los ambientes de formación del SENA.
 
 ---
 
-## 📖 Descripción
+##  Descripción
 
 SENA ASEO es una aplicación web que permite administrar el estado de limpieza de los salones, asignar responsabilidades y consultar información relacionada con el mantenimiento de los ambientes de formación.
 
 ---
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
-- 👤 Inicio de sesión.
-- 🧹 Gestión de aseo.
-- 🏫 Administración de salones.
-- 👥 Gestión de usuarios.
-- 📊 Consulta de información.
+-  Inicio de sesión.
+-  Gestión de aseo.
+-  Administración de salones.
+-  Gestión de usuarios.
+-  Consulta de información.
 
 ---
 
-## 👥 Roles
+##  Roles
 
 - Administrador
 - Instructor
@@ -28,7 +28,7 @@ SENA ASEO es una aplicación web que permite administrar el estado de limpieza d
 
 ---
 
-## 🛠️ Tecnologías
+##  Tecnologías
 
 - HTML5
 - CSS3
@@ -37,7 +37,7 @@ SENA ASEO es una aplicación web que permite administrar el estado de limpieza d
 
 ---
 
-## 📂 Estructura
+##  Estructura
 
 ```
 Sena-Aseo
@@ -51,19 +51,19 @@ Sena-Aseo
 
 ---
 
-## 📷 Capturas
+##  Capturas
 
 *(se agregaran mas adelante)*
 
 ---
 
-## 🚀 Estado
+##  Estado
 
-🟡 En desarrollo.
+ En desarrollo.
 
 ---
 
-## 👨‍💻 Autores
+##  Autores
 
 - 3leviathan3
 - alexdev666
