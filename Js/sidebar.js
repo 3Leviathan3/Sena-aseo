@@ -105,6 +105,13 @@ function toggleSidebar(event) {
 
 }
 
+/* ==========================================
+        BOTON INBOX
+========================================== */
+
+
+
+
 /* Momemtaneamente este archivo contiene las funciones que realizara el archivo dashboard.js, despues se organizara
 y sidebar solo contendra las funciones relacionadas con el sidebar */
 

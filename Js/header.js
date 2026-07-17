@@ -12,3 +12,5 @@ async function cargarHeader() {
     // Funciones propias del header...
 
 }
+
+
