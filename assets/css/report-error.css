@@ -1,0 +1,153 @@
+.report-container{
+
+    display:flex;
+    justify-content:center;
+    align-items: flex-start;
+
+    padding:40px;
+
+}
+
+.report-card{
+
+    width:100%;
+    max-width:850px;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.form-group{
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    
+    margin-bottom: 0px;
+}
+
+.form-group label{
+
+    font-weight: 600;
+
+    color: #004540;
+}
+
+.form-group select,
+.form-group textarea{
+
+    width:100%;
+    border:2px solid #d8d8d8;
+
+    border-radius:12px;
+
+    padding:15px;
+
+    font-size:15px;
+
+    transition:.2s;
+
+}
+
+.form-group textarea{
+
+    min-height:220px;
+    color: #004540;
+    resize:vertical;
+    border-radius: 12px;
+
+}
+
+.form-group select:focus,
+.form-group textarea:focus{
+
+    outline:none;
+
+    border-color:#0d877a;
+
+}
+
+.character-counter{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    font-size:13px;
+
+    color:#666;
+
+}
+
+.report-card h1{
+
+    margin-bottom:10px;
+
+}
+
+.report-card p{
+
+    margin-bottom:25px;
+
+    color:#666;
+
+}
+
+
+.report-card button{
+
+    padding:12px 28px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+.report-card-footer{
+
+    display:flex;
+    justify-content:flex-end;
+    margin-top:10px;
+}
+
+.report-card button:hover{
+
+    background:#004540;
+
+    transform:scale(1.03);
+
+}
+
+.enviar-report-error-button{
+
+    background:#0d877a;
+    color:#fff;
+    font-size:15px;
+    gap: 20px;
+    transition:.2s ease;
+
+}
+
+.character-counter{
+
+    margin-top:8px;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    color:#7a7a7a;
+
+    font-size:13px;
+
+}

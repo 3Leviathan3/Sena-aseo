@@ -37,7 +37,18 @@
 
     <nav class="sidebar-menu">
 
-    <a href="/pages/instructor/mis-turnos.html"
+    <a href="/pages/dashboard.html"
+       class="menu-button"
+       data-page="dashboard.html">
+
+       <i class="fa-solid fa-house"></i> <!-- Icono de inicio/home -->
+        <span class="menu-text">
+            Inicio
+        </span>
+
+    </a>
+
+    <a href="/pages/mis-turnos.html"
        class="menu-button"
        data-page="mis-turnos.html">
 
@@ -49,7 +60,7 @@
         </span>
     </a>
 
-    <a href="/pages/instructor/mi-perfil.html"
+    <a href="/pages/mi-perfil.html"
        class="menu-button"
        data-page="mi-perfil.html">
 
@@ -60,7 +71,7 @@
 
     </a>
 
-    <a href="/pages/instructor/informacion-ficha.html"
+    <a href="/pages/informacion-ficha.html"
        class="menu-button"
        data-page="informacion-ficha.html">
 
@@ -73,13 +84,33 @@
 
 </nav>
 
-    <button class="report-error-button">
+    <a 
+        href="/pages/report-error.html" 
+        class="menu-button report-error-button"
+        data-page="report-error.html">
 
         <i class="fa-solid fa-triangle-exclamation"></i> <!-- Icono de advertencia -->
         <span class="menu-text">
             ¿Encontraste algun error?
         </span>
 
-    </button>
+    </a>
+
+    <a>
+        
+        <button 
+            id="logout-button"
+            class="logout-button">
+
+            <i class="fa-solid fa-right-from-bracket"></i> <!-- Icono de cerrar sesión -->
+            <span class="menu-text">
+                Cerrar sesión
+            </span>
+
+        </button>
+
+
+
+    </a>
 
 </aside>

@@ -159,14 +159,6 @@
 
 }
 
-.menu-button:focus{
-
-    outline:2px solid #01d885;
-
-    outline-offset:3px;
-
-}
-
 .menu-button-active{
 
     background:#0d877a;
@@ -175,9 +167,16 @@
 
 }
 
+.menu-button:focus{
+
+    outline:2px solid #01d885;
+
+    outline-offset:3px;
+
+}
 
 /* ==========================================
-            BOTON INFERIOR
+            BOTON DE REPORTAR ERROR
 ========================================== */
 
 .report-error-button{
@@ -206,12 +205,62 @@
     cursor:pointer;
 
     transition:.2s ease;
-
+    text-decoration:none;
 }
 
 .report-error-button:hover{
 
     background:#004540;
+
+    transform:scale(1.03);
+
+}
+
+.report-error-button-active{
+
+    background:#004540 ;
+
+    color: #ffffff;
+
+    transform: translateY(2px);
+
+    box-shadow: inset 0 4px 8px rgba(0,0,0,.35);
+
+    border-color: #002f2c;
+
+}
+
+
+/* ==========================================
+            BOTÓN CERRAR SESIÓN
+========================================== */
+.logout-button{
+
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap: 12px;
+    padding: 0 25px;
+
+    width:100%;
+    height:50px;
+
+    background:#f70000;
+
+    color:#ffffff;
+
+    border:2px solid #740404;
+    border-radius:15px;
+
+    box-shadow:0 3px 8px rgba(0,0,0,.25);
+
+    font-size:15px;
+    font-weight:bold;
+}
+
+.logout-button:hover{
+
+    background:#8b0000;
 
     transform:scale(1.03);
 

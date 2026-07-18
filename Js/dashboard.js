@@ -12,3 +12,7 @@ function inicializarDashboard() {
     // Aquí irá la lógica exclusiva del Dashboard
 
 } */
+
+document
+    .querySelector('a[href="dashboard.html"]')
+    ?.classList.add("active");

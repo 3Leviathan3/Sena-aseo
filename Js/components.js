@@ -31,3 +31,4 @@ async function cargarComponente(idContenedor, rutaComponente) {
     }
 
 }
+

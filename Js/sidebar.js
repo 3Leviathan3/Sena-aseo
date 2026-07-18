@@ -26,10 +26,14 @@ async function cargarSidebar() {
     }
 
     cargarDatosUsuario();
-
     activarMenu();
 
+
+
 }
+
+
+
 
 
 
@@ -72,7 +76,15 @@ function activarMenu() {
 
         if (boton.dataset.page === paginaActual) {
 
-            boton.classList.add("menu-button-active");
+            if (boton.classList.contains("report-error-button")) {
+
+                boton.classList.add("report-error-button-active");
+
+            } else {
+
+                boton.classList.add("menu-button-active");
+
+            }
 
         }
 
