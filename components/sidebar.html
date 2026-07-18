@@ -1,0 +1,116 @@
+<aside class="sidebar">
+
+    <div class="sidebar-profile">
+        
+        <div class="sidebar-header">
+            <button 
+                id="sidebar-toggle"
+                class="sidebar-toggle">
+
+                <i class="fa-solid fa-bars"></i>
+        
+            </button>
+            <button
+                id="sidebar-inbox"
+                class="sidebar-inbox">
+
+                <i class="fa-solid fa-inbox"></i>
+                
+            </button>
+        </div>
+        
+        <img
+            src="/assets/img/icono-usuario.webp"
+            alt="Foto de perfil del usuario"
+            class="profile-image"
+            id="user-photo"
+        >
+
+        <h2 class="welcome-title">
+            Bienvenido,
+            <span id="user-name" class="user-name"></span>
+        </h2>
+
+        <p id="user-id" class="user-id"></p>
+
+    </div>
+
+    <nav class="sidebar-menu">
+
+    <a href="/pages/dashboard.html"
+       class="menu-button"
+       data-page="dashboard.html">
+
+       <i class="fa-solid fa-house"></i> <!-- Icono de inicio/home -->
+        <span class="menu-text">
+            Inicio
+        </span>
+
+    </a>
+
+    <a href="/pages/mis-turnos.html"
+       class="menu-button"
+       data-page="mis-turnos.html">
+
+        <i class="fa-solid fa-calendar-days menu-icon"></i> <!-- Icono de calendario -->
+
+
+        <span class="menu-text">
+            Mis turnos
+        </span>
+    </a>
+
+    <a href="/pages/mi-perfil.html"
+       class="menu-button"
+       data-page="mi-perfil.html">
+
+       <i class="fa-solid fa-user menu-icon"></i> <!-- Icono de usuario -->
+        <span class="menu-text">
+            Mi perfil
+        </span>
+
+    </a>
+
+    <a href="/pages/informacion-ficha.html"
+       class="menu-button"
+       data-page="informacion-ficha.html">
+
+       <i class="fa-solid fa-circle-info menu-icon"></i> <!-- Icono de información -->
+        <span class="menu-text">
+            Info. ficha
+        </span>
+
+    </a>
+
+</nav>
+
+    <a 
+        href="/pages/report-error.html" 
+        class="menu-button report-error-button"
+        data-page="report-error.html">
+
+        <i class="fa-solid fa-triangle-exclamation"></i> <!-- Icono de advertencia -->
+        <span class="menu-text">
+            ¿Encontraste algun error?
+        </span>
+
+    </a>
+
+    <a>
+        
+        <button 
+            id="logout-button"
+            class="logout-button">
+
+            <i class="fa-solid fa-right-from-bracket"></i> <!-- Icono de cerrar sesión -->
+            <span class="menu-text">
+                Cerrar sesión
+            </span>
+
+        </button>
+
+
+
+    </a>
+
+</aside>
