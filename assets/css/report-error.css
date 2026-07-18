@@ -8,7 +8,7 @@
 
 }
 
-.report-card{
+.card{
 
     width:100%;
     max-width:850px;
@@ -86,13 +86,13 @@
 
 }
 
-.report-card h1{
+.card h1{
 
     margin-bottom:10px;
 
 }
 
-.report-card p{
+.card p{
 
     margin-bottom:25px;
 
@@ -101,7 +101,7 @@
 }
 
 
-.report-card button{
+.card button{
 
     padding:12px 28px;
 
@@ -113,14 +113,14 @@
 
 }
 
-.report-card-footer{
+.card-footer{
 
     display:flex;
     justify-content:flex-end;
     margin-top:10px;
 }
 
-.report-card button:hover{
+.card button:hover{
 
     background:#004540;
 
